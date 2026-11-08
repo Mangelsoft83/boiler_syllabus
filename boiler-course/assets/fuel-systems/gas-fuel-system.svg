@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc"><title id="title">Gas fuel: fuel valves and combustion-air fan</title><desc id="desc">Gas fuel passes through isolation and control valves to the burner. A separate fan and damper supply combustion air.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs><rect width="1200" height="560" fill="#fff"/><g font-family="Arial, sans-serif" fill="#182333">
+<text x="600" y="36" text-anchor="middle" font-size="25" fill="#182333">Gas fuel: fuel valves and combustion-air fan</text>
+<rect x="885" y="125" width="110" height="270" rx="10" fill="#fff0df" stroke="#61748b" stroke-width="2"/>
+<text x="940.0" y="266.0" text-anchor="middle" font-size="17" fill="#182333">Burner</text>
+<rect x="1035" y="125" width="130" height="270" rx="10" fill="#fff6e9" stroke="#61748b" stroke-width="2"/>
+<text x="1100.0" y="266.0" text-anchor="middle" font-size="17" fill="#182333">Furnace</text>
+<path d="M995 255H1027" fill="none" stroke="#dd7623" stroke-width="4" marker-end="url(#arrow)"/>
+<rect x="30" y="145" width="150" height="70" rx="10" fill="#fff7df" stroke="#61748b" stroke-width="2"/>
+<text x="105.0" y="186.0" text-anchor="middle" font-size="17" fill="#182333">Gas supply</text>
+<path d="M180 180H875" fill="none" stroke="#b38118" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M334 166L366 194V166L334 194Z" fill="white" stroke="#b38118" stroke-width="3"/><path d="M350 179V150M340 150H360" stroke="#b38118" stroke-width="2"/>
+<text x="350" y="226" text-anchor="middle" font-size="16" fill="#182333">Isolation</text>
+<text x="350" y="248" text-anchor="middle" font-size="16" fill="#182333">valve</text>
+<path d="M584 166L616 194V166L584 194Z" fill="white" stroke="#b38118" stroke-width="3"/><path d="M600 179V150M590 150H610" stroke="#b38118" stroke-width="2"/>
+<text x="600" y="226" text-anchor="middle" font-size="16" fill="#182333">Control</text>
+<text x="600" y="248" text-anchor="middle" font-size="16" fill="#182333">valve</text>
+<text x="735" y="158" text-anchor="middle" font-size="17" fill="#b38118">Fuel gas</text>
+<text x="78" y="369" text-anchor="middle" font-size="17" fill="#182333">Air inlet</text>
+<path d="M130 360H250" fill="none" stroke="#326bc1" stroke-width="4" marker-end="url(#arrow)"/>
+<circle cx="280" cy="360" r="30" fill="#e8f2ff" stroke="#326bc1" stroke-width="3"/><path d="M267 342L301 360L267 378Z" fill="#326bc1"/>
+<text x="280" y="309" text-anchor="middle" font-size="17" fill="#182333">Air fan</text>
+<path d="M310 360H875" fill="none" stroke="#326bc1" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M584 346L616 374V346L584 374Z" fill="white" stroke="#326bc1" stroke-width="3"/><path d="M600 359V330M590 330H610" stroke="#326bc1" stroke-width="2"/>
+<text x="600" y="406" text-anchor="middle" font-size="16" fill="#182333">Air damper</text>
+<text x="755" y="338" text-anchor="middle" font-size="17" fill="#326bc1">Combustion air</text>
+<text x="600" y="469" text-anchor="middle" font-size="18" fill="#182333">Fuel flow × fuel parameters → heat input and fuel-derived products.</text>
+<text x="600" y="505" text-anchor="middle" font-size="16" fill="#182333">The fan moves combustion air; the valves regulate the separate fuel stream.</text>
+<text x="600" y="536" text-anchor="middle" font-size="15" fill="#61748b">Conceptual flow diagram; valve trains and auxiliaries are simplified.</text>
+</g></svg>
