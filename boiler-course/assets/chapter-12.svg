@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="330" viewBox="0 0 1040 330">
+<rect width="1040" height="330" rx="18" fill="#f6f9fc"/>
+<rect x="16" y="16" width="1008" height="298" rx="14" fill="#fff" stroke="#d7e2ee"/>
+<text x="42" y="57" font-family="Arial,sans-serif" font-size="23" font-weight="bold" fill="#16324f">12. Fans, Blowers and Compressors</text>
+<text x="42" y="86" font-family="Arial,sans-serif" font-size="14" fill="#547087">Physical inputs, equipment behavior and outputs</text>
+<rect x="45" y="135" width="260" height="112" rx="13" fill="#e4f2ff" stroke="#adc2d5"/>
+<text x="175" y="177" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#173c5b">Inputs</text>
+<text x="175" y="205" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#37576e">Mass, energy, signals</text>
+<path d="M 312 191 H 374" stroke="#326b9c" stroke-width="3"/>
+<path d="M 365 184 l 10 7 -10 7" fill="none" stroke="#326b9c" stroke-width="3"/>
+<rect x="390" y="135" width="260" height="112" rx="13" fill="#e8f7ee" stroke="#adc2d5"/>
+<text x="520" y="177" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#173c5b">Equipment / process</text>
+<text x="520" y="205" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#37576e">Physics + parameters</text>
+<path d="M 657 191 H 719" stroke="#326b9c" stroke-width="3"/>
+<path d="M 710 184 l 10 7 -10 7" fill="none" stroke="#326b9c" stroke-width="3"/>
+<rect x="735" y="135" width="260" height="112" rx="13" fill="#fff1df" stroke="#adc2d5"/>
+<text x="865" y="177" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#173c5b">Outputs</text>
+<text x="865" y="205" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#37576e">States and flows</text>
+<text x="42" y="285" font-family="Arial,sans-serif" font-size="13" fill="#687e8d">Conceptual training diagram — not a construction or safety design drawing</text>
+</svg>
