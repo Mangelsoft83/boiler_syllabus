@@ -860,7 +860,8 @@ L 596.54125 30.318125
    </g>
    <g id="text_13">
     <!-- 24 · Water-Tube Boilers -->
-    <g transform="translate(43.78125 16.318125) scale(0.12 -0.12)">
+    <text x="43.78125" y="16.318125" font-family="Arial, sans-serif" font-size="12" font-weight="bold">3 · Water-Tube Boilers</text>
+    <g visibility="hidden" transform="translate(43.78125 16.318125) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-Bold-32" d="M 1844 884 
 L 3897 884 

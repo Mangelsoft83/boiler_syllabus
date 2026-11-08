@@ -1,8 +1,9 @@
-# 9. 9. Fundamentals of Dynamic Process Simulation
+# 9. Fundamentals of Dynamic Process Simulation
+
+> **Status:** Draft — not yet reviewed. Content may contain errors or omissions.
 
 > **Audience:** Beginning simulation engineers  
 > **Scope:** Process understanding, practical engineering calculations and introductory simulation.\
-> **Status:** Foundation lesson; values and simplified models must be checked against plant-specific data before use.
 
 ## What you will learn
 
@@ -13,14 +14,14 @@
 
 ## Process illustration
 
-![Conceptual process diagram for 9. Fundamentals of Dynamic Process Simulation](../../assets/chapter-09.svg)
+![Conceptual process diagram for 9. Fundamentals of Dynamic Process Simulation](../assets/chapter-09.svg)
 
 *Figure: Dynamic simulation calculation cycle. The diagram highlights the main input, physical transformation, and output quantities relevant to a first model.*
 
 
 ## Additional engineering illustration — Dynamic response and time constant
 
-![Dynamic response and time constant](../../assets/topic-curves/09-engineering-characteristic.svg)
+![Dynamic response and time constant](../assets/topic-curves/09-engineering-characteristic.svg)
 
 *Illustrative teaching graph, not manufacturer data or a validated plant characteristic.*
 

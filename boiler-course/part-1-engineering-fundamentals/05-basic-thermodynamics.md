@@ -1,8 +1,9 @@
-# 5. 5. Basic Thermodynamics
+# 5. Basic Thermodynamics
+
+> **Status:** Draft — not yet reviewed. Content may contain errors or omissions.
 
 > **Audience:** Beginning simulation engineers  
 > **Scope:** Process understanding, practical engineering calculations and introductory simulation.\
-> **Status:** Foundation lesson; values and simplified models must be checked against plant-specific data before use.
 
 ## What you will learn
 
@@ -13,14 +14,14 @@
 
 ## Process illustration
 
-![Conceptual process diagram for 5. Basic Thermodynamics](../../assets/chapter-05.svg)
+![Conceptual process diagram for 5. Basic Thermodynamics](../assets/chapter-05.svg)
 
 *Figure: Dynamic simulation calculation cycle. The diagram highlights the main input, physical transformation, and output quantities relevant to a first model.*
 
 
 ## Additional engineering illustration — Sensible heating, boiling and superheating
 
-![Sensible heating, boiling and superheating](../../assets/topic-curves/05-engineering-characteristic.svg)
+![Sensible heating, boiling and superheating](../assets/topic-curves/05-engineering-characteristic.svg)
 
 *Illustrative teaching graph, not manufacturer data or a validated plant characteristic.*
 

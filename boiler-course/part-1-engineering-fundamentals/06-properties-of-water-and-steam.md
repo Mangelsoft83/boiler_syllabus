@@ -1,8 +1,9 @@
-# 6. 6. Properties of Water and Steam
+# 6. Properties of Water and Steam
+
+> **Status:** Draft — not yet reviewed. Content may contain errors or omissions.
 
 > **Audience:** Beginning simulation engineers  
 > **Scope:** Process understanding, practical engineering calculations and introductory simulation.\
-> **Status:** Foundation lesson; values and simplified models must be checked against plant-specific data before use.
 
 ## What you will learn
 
@@ -13,14 +14,14 @@
 
 ## Process illustration
 
-![Conceptual process diagram for 6. Properties of Water and Steam](../../assets/chapter-06.svg)
+![Conceptual process diagram for 6. Properties of Water and Steam](../assets/chapter-06.svg)
 
 *Figure: Water and steam energy balance. The diagram highlights the main input, physical transformation, and output quantities relevant to a first model.*
 
 
 ## Engineering characteristic: Water saturation temperature versus pressure
 
-![Water saturation temperature versus pressure](../../assets/engineering-curves/06-water-saturation.png)
+![Water saturation temperature versus pressure](../assets/engineering-curves/06-water-saturation.png)
 
 *Illustrative teaching curves, not manufacturer or plant performance data.*
 
@@ -29,7 +30,7 @@ Approximate rounded saturation points for teaching; consult IAPWS-IF97 for prope
 
 ## Additional engineering illustration — Sensible heating, boiling and superheating
 
-![Sensible heating, boiling and superheating](../../assets/topic-curves/06-engineering-characteristic.svg)
+![Sensible heating, boiling and superheating](../assets/topic-curves/06-engineering-characteristic.svg)
 
 *Illustrative teaching graph, not manufacturer data or a validated plant characteristic.*
 

@@ -1,8 +1,9 @@
-# 4. 4. Pressure, Flow and Hydraulic Principles
+# 4. Pressure, Flow and Hydraulic Principles
+
+> **Status:** Draft — not yet reviewed. Content may contain errors or omissions.
 
 > **Audience:** Beginning simulation engineers  
 > **Scope:** Process understanding, practical engineering calculations and introductory simulation.\
-> **Status:** Foundation lesson; values and simplified models must be checked against plant-specific data before use.
 
 ## What you will learn
 
@@ -13,14 +14,14 @@
 
 ## Process illustration
 
-![Conceptual process diagram for 4. Pressure, Flow and Hydraulic Principles](../../assets/chapter-04.svg)
+![Conceptual process diagram for 4. Pressure, Flow and Hydraulic Principles](../assets/chapter-04.svg)
 
 *Figure: Flow driven by pressure difference. The diagram highlights the main input, physical transformation, and output quantities relevant to a first model.*
 
 
 ## Additional engineering illustration — Flow resistance
 
-![Flow resistance](../../assets/topic-curves/04-engineering-characteristic.svg)
+![Flow resistance](../assets/topic-curves/04-engineering-characteristic.svg)
 
 *Illustrative teaching graph, not manufacturer data or a validated plant characteristic.*
 

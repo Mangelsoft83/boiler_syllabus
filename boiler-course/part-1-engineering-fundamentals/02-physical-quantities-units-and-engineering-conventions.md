@@ -1,8 +1,9 @@
-# 2. 2. Physical Quantities, Units and Engineering Conventions
+# 2. Physical Quantities, Units and Engineering Conventions
+
+> **Status:** Draft — not yet reviewed. Content may contain errors or omissions.
 
 > **Audience:** Beginning simulation engineers  
 > **Scope:** Process understanding, practical engineering calculations and introductory simulation.\
-> **Status:** Foundation lesson; values and simplified models must be checked against plant-specific data before use.
 
 ## What you will learn
 
@@ -13,14 +14,14 @@
 
 ## Process illustration
 
-![Conceptual process diagram for 2. Physical Quantities, Units and Engineering Conventions](../../assets/chapter-02.svg)
+![Conceptual process diagram for 2. Physical Quantities, Units and Engineering Conventions](../assets/chapter-02.svg)
 
 *Figure: Physical inputs, equipment behavior and outputs. The diagram highlights the main input, physical transformation, and output quantities relevant to a first model.*
 
 
 ## Additional engineering illustration — Flow resistance
 
-![Flow resistance](../../assets/topic-curves/02-engineering-characteristic.svg)
+![Flow resistance](../assets/topic-curves/02-engineering-characteristic.svg)
 
 *Illustrative teaching graph, not manufacturer data or a validated plant characteristic.*
 

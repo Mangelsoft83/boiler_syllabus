@@ -1,8 +1,9 @@
-# 3. 3. Mass, Energy and Momentum Balances
+# 3. Mass, Energy and Momentum Balances
+
+> **Status:** Draft — not yet reviewed. Content may contain errors or omissions.
 
 > **Audience:** Beginning simulation engineers  
 > **Scope:** Process understanding, practical engineering calculations and introductory simulation.\
-> **Status:** Foundation lesson; values and simplified models must be checked against plant-specific data before use.
 
 ## What you will learn
 
@@ -13,14 +14,14 @@
 
 ## Process illustration
 
-![Conceptual process diagram for 3. Mass, Energy and Momentum Balances](../../assets/chapter-03.svg)
+![Conceptual process diagram for 3. Mass, Energy and Momentum Balances](../assets/chapter-03.svg)
 
 *Figure: Physical inputs, equipment behavior and outputs. The diagram highlights the main input, physical transformation, and output quantities relevant to a first model.*
 
 
 ## Additional engineering illustration — Performance versus load
 
-![Performance versus load](../../assets/topic-curves/03-engineering-characteristic.svg)
+![Performance versus load](../assets/topic-curves/03-engineering-characteristic.svg)
 
 *Illustrative teaching graph, not manufacturer data or a validated plant characteristic.*
 

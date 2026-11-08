@@ -1,8 +1,9 @@
-# 8. 8. Fluid Dynamics and Pressure Losses
+# 8. Fluid Dynamics and Pressure Losses
+
+> **Status:** Draft — not yet reviewed. Content may contain errors or omissions.
 
 > **Audience:** Beginning simulation engineers  
 > **Scope:** Process understanding, practical engineering calculations and introductory simulation.\
-> **Status:** Foundation lesson; values and simplified models must be checked against plant-specific data before use.
 
 ## What you will learn
 
@@ -13,14 +14,14 @@
 
 ## Process illustration
 
-![Conceptual process diagram for 8. Fluid Dynamics and Pressure Losses](../../assets/chapter-08.svg)
+![Conceptual process diagram for 8. Fluid Dynamics and Pressure Losses](../assets/chapter-08.svg)
 
 *Figure: Flow driven by pressure difference. The diagram highlights the main input, physical transformation, and output quantities relevant to a first model.*
 
 
 ## Engineering characteristic: Pipe pressure loss versus flow
 
-![Pipe pressure loss versus flow](../../assets/engineering-curves/08-pipe-pressure-loss.png)
+![Pipe pressure loss versus flow](../assets/engineering-curves/08-pipe-pressure-loss.png)
 
 *Illustrative teaching curves, not manufacturer or plant performance data.*
 
@@ -29,7 +30,7 @@ The quadratic law is a useful approximation when friction factor and fluid prope
 
 ## Additional engineering illustration — Flow resistance
 
-![Flow resistance](../../assets/topic-curves/08-engineering-characteristic.svg)
+![Flow resistance](../assets/topic-curves/08-engineering-characteristic.svg)
 
 *Illustrative teaching graph, not manufacturer data or a validated plant characteristic.*
 

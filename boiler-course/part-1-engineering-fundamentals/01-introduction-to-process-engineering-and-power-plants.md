@@ -1,8 +1,9 @@
-# 1. 1. Introduction to Process Engineering and Power Plants
+# 1. Introduction to Process Engineering and Power Plants
+
+> **Status:** Draft — not yet reviewed. Content may contain errors or omissions.
 
 > **Audience:** Beginning simulation engineers  
 > **Scope:** Process understanding, practical engineering calculations and introductory simulation.\
-> **Status:** Foundation lesson; values and simplified models must be checked against plant-specific data before use.
 
 ## What you will learn
 
@@ -13,18 +14,10 @@
 
 ## Process illustration
 
-![Conceptual process diagram for 1. Introduction to Process Engineering and Power Plants](../../assets/chapter-01.svg)
+![Conceptual process diagram for 1. Introduction to Process Engineering and Power Plants](../assets/chapter-01.svg)
 
 *Figure: Physical inputs, equipment behavior and outputs. The diagram highlights the main input, physical transformation, and output quantities relevant to a first model.*
 
-
-## Additional engineering illustration — Performance versus load
-
-![Performance versus load](../../assets/topic-curves/01-engineering-characteristic.svg)
-
-*Illustrative teaching graph, not manufacturer data or a validated plant characteristic.*
-
-**Interpretation:** Illustrative trend only, not a plant efficiency prediction. Calculate actual performance using mass and energy balances.
 
 ## Process principles
 

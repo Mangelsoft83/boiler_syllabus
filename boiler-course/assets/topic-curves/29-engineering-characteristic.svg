@@ -1100,7 +1100,8 @@ L 596.558125 30.318125
    </g>
    <g id="text_15">
     <!-- 29 · Boiler Fuels and Fuel Handling Systems -->
-    <g transform="translate(40.603125 16.318125) scale(0.12 -0.12)">
+    <text x="40.603125" y="16.318125" font-family="Arial, sans-serif" font-size="12" font-weight="bold">8 · Boiler Fuels and Fuel Handling Systems</text>
+    <g visibility="hidden" transform="translate(40.603125 16.318125) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-Bold-32" d="M 1844 884 
 L 3897 884 

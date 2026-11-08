@@ -1198,7 +1198,8 @@ L 596.513125 30.318125
    </g>
    <g id="text_17">
     <!-- 50 · Rankine Cycle and Plant Efficiency -->
-    <g transform="translate(40.603125 16.318125) scale(0.12 -0.12)">
+    <text x="40.603125" y="16.318125" font-family="Arial, sans-serif" font-size="12" font-weight="bold">13 · Rankine Cycle and Plant Efficiency</text>
+    <g visibility="hidden" transform="translate(40.603125 16.318125) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-Bold-35" d="M 678 4666 
 L 3669 4666 

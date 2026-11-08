@@ -1,8 +1,9 @@
-# 7. 7. Heat Transfer: Conduction, Convection and Radiation
+# 7. Heat Transfer: Conduction, Convection and Radiation
+
+> **Status:** Draft — not yet reviewed. Content may contain errors or omissions.
 
 > **Audience:** Beginning simulation engineers  
 > **Scope:** Process understanding, practical engineering calculations and introductory simulation.\
-> **Status:** Foundation lesson; values and simplified models must be checked against plant-specific data before use.
 
 ## What you will learn
 
@@ -13,14 +14,14 @@
 
 ## Process illustration
 
-![Conceptual process diagram for 7. Heat Transfer: Conduction, Convection and Radiation](../../assets/chapter-07.svg)
+![Conceptual process diagram for 7. Heat Transfer: Conduction, Convection and Radiation](../assets/chapter-07.svg)
 
 *Figure: Convection, conduction and thermal storage. The diagram highlights the main input, physical transformation, and output quantities relevant to a first model.*
 
 
 ## Engineering characteristic: Convection and radiation versus temperature
 
-![Convection and radiation versus temperature](../../assets/engineering-curves/07-heat-transfer-modes.png)
+![Convection and radiation versus temperature](../assets/engineering-curves/07-heat-transfer-modes.png)
 
 *Illustrative teaching curves, not manufacturer or plant performance data.*
 
@@ -29,7 +30,7 @@ Illustrative comparison for area A = 1 m², ambient/surroundings at 20 °C, h = 
 
 ## Additional engineering illustration — Illustrative temperature profiles
 
-![Illustrative temperature profiles](../../assets/topic-curves/07-engineering-characteristic.svg)
+![Illustrative temperature profiles](../assets/topic-curves/07-engineering-characteristic.svg)
 
 *Illustrative teaching graph, not manufacturer data or a validated plant characteristic.*
 

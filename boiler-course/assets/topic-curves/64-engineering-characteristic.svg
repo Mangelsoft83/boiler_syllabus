@@ -1198,7 +1198,8 @@ L 596.513125 30.318125
    </g>
    <g id="text_17">
     <!-- 64 · Modeling Steam Turbines and Condensers -->
-    <g transform="translate(40.603125 16.318125) scale(0.12 -0.12)">
+    <text x="40.603125" y="16.318125" font-family="Arial, sans-serif" font-size="12" font-weight="bold">8 · Modeling Steam Turbines and Condensers</text>
+    <g visibility="hidden" transform="translate(40.603125 16.318125) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-Bold-36" d="M 2316 2303 
 Q 2000 2303 1842 2098 
