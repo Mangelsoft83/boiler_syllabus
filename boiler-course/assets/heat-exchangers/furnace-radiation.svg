@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Furnace radiation to a water-cooled tube wall</title>
+  <desc id="desc">Radiation and convection transfer heat from a furnace to a tube wall, then conduction through the metal and convection or boiling transfer heat to water and steam. A schematic temperature plot shows gas hotter than the outer wall, inner wall, and boiling fluid.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="context-stroke"/></marker></defs>
+  <rect width="1200" height="520" fill="white"/>
+  <g font-family="Arial, sans-serif" fill="#182333">
+    <text x="600" y="36" text-anchor="middle" font-size="25">Radiant heat exchanger: boiler furnace</text>
+    <rect x="40" y="85" width="290" height="295" rx="12" fill="#fff0df" stroke="#c54b24" stroke-width="3"/>
+    <text x="185" y="120" text-anchor="middle" font-size="21">Flame and hot gas</text>
+    <text x="185" y="151" text-anchor="middle" font-size="16">Hot side: furnace exit Tfg,exit</text>
+    <path d="M100 330 Q70 285 125 238 Q122 280 153 257 Q195 295 164 330Z" fill="#ed7e20"/>
+    <text x="185" y="357" text-anchor="middle" font-size="17">Fuel + air → combustion</text>
+    <rect x="365" y="85" width="36" height="295" fill="#a8adb5" stroke="#414957" stroke-width="2"/>
+    <rect x="401" y="85" width="137" height="295" fill="#e4f3ff" stroke="#2765ae" stroke-width="2"/>
+    <text x="470" y="198" text-anchor="middle" font-size="19">Water /</text>
+    <text x="470" y="225" text-anchor="middle" font-size="19">steam</text>
+    <path d="M480 325V255" fill="none" stroke="#2765ae" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M205 205L355 205 M205 245L355 245" stroke="#d95126" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="266" y="187" text-anchor="middle" font-size="18" fill="#b13a18">Radiation</text>
+    <text x="277" y="284" text-anchor="middle" font-size="17">+ convection</text>
+    <text x="383" y="411" text-anchor="middle" font-size="18">Tube metal</text>
+    <text x="470" y="442" text-anchor="middle" font-size="17">Heat absorbed by fluid</text>
+    <text x="855" y="91" text-anchor="middle" font-size="20">Local temperature through the wall</text>
+    <path d="M630 120V370H1135" fill="none" stroke="#182333" stroke-width="2"/>
+    <text x="610" y="252" transform="rotate(-90 610 252)" text-anchor="middle" font-size="18">Temperature</text>
+    <rect x="852" y="125" width="78" height="244" fill="#edf0f4"/>
+    <path d="M660 145H745L862 284L922 302L1030 332H1115" fill="none" stroke="#d95126" stroke-width="4"/>
+    <circle cx="862" cy="284" r="5" fill="#e69613"/><circle cx="922" cy="302" r="5" fill="#e69613"/>
+    <text x="680" y="133" font-size="18">Furnace exit gas</text>
+    <text x="800" y="255" font-size="17">Twall,outer</text>
+    <text x="931" y="282" font-size="17">Twall,inner</text>
+    <text x="1023" y="322" font-size="18" fill="#2765ae">Tfluid</text>
+    <text x="715" y="400" text-anchor="middle" font-size="17">Furnace</text>
+    <text x="890" y="400" text-anchor="middle" font-size="17">Metal</text>
+    <text x="1055" y="400" text-anchor="middle" font-size="17">Fluid</text>
+    <text x="875" y="441" text-anchor="middle" font-size="16">Schematic thermal drops; distance not to scale</text>
+    <text x="600" y="490" text-anchor="middle" font-size="17">During boiling at nearly constant pressure, added heat mainly increases steam quality.</text>
+  </g>
+</svg>

@@ -16,9 +16,11 @@ For constant specific heats, use $\dot Q=\dot m c_p\Delta T$. Here $\dot m$ is m
 
 ## 17.2 Co-current (parallel) flow
 
-![Parallel-flow arrangement and temperature profiles](../../assets/heat-exchangers/cocurrent.png)
+![Parallel-flow arrangement with hot-stream, cold-stream and wall-temperature profiles](../assets/heat-exchangers/cocurrent.png)
 
 Both streams enter at the **same end** and travel in the **same direction**. The temperature difference is greatest near the inlet and typically shrinks toward the outlet. For sensible heating with no external work, the cold outlet cannot exceed the hot outlet in an ideal co-current exchanger. This arrangement is straightforward but often needs more heat-transfer area than counter-current flow for the same duty.
+
+The dashed orange line shows the **wall temperature** between the two fluid temperatures. This illustration assumes steady sensible heat transfer, equal heat-capacity rates, a thin wall with negligible through-wall temperature drop, and equal hot- and cold-side film conductances. Under these assumptions, $T_w=(T_h+T_c)/2$ and remains at 90 °C while the hot stream cools from 150 °C to approximately 95 °C and the cold stream warms from 30 °C to approximately 85 °C. In general, wall temperature varies with position and the relative film resistances; a wall with appreciable thermal resistance has different hot- and cold-facing surface temperatures.
 
 ## 17.3 Counter-current flow
 
@@ -27,6 +29,34 @@ Both streams enter at the **same end** and travel in the **same direction**. The
 The streams move in **opposite directions**. A more even temperature difference is maintained along the exchanger, which usually gives a higher log-mean temperature difference (LMTD) for the same terminal temperatures. The cold outlet can be hotter than the hot outlet (but not hotter than the hot inlet), without violating the second law.
 
 **Graph convention:** The horizontal axis in both illustrations follows the *hot-fluid direction*. In counter-current flow the cold fluid travels from right to left; therefore its temperature can decrease when plotted left-to-right, even though it heats up along its own direction of travel.
+
+### Radiant heat exchanger: a furnace
+
+![Furnace radiation to a tube wall, with gas, outer-wall, inner-wall and fluid temperatures](../assets/heat-exchangers/furnace-radiation.svg)
+
+A boiler furnace acts as a **radiant heat exchanger**: the flame, radiating combustion gases and hot surroundings transfer energy to water-wall tubes. Heat reaches the outside of the tube by radiation and gas convection, passes through the metal by conduction, and enters the water or steam by convection or boiling. Radiation is a heat-transfer mechanism; it does not define a co-current or counter-current flow arrangement.
+
+For this course calculation, use the **furnace exit flue-gas temperature** $T_{fg,exit}$ as the **hot-side temperature**. In the lumped model, set both the effective radiation-source temperature and the gas-side convection temperature to this value: $T_r=T_g=T_{fg,exit}$. This is a modeling approximation: actual flame and local gas temperatures can be higher than the furnace exit temperature.
+
+![Illustrative furnace temperature profiles along the flue-gas path, with outer and inner tube-wall temperatures, boiling-fluid temperature and the furnace exit temperature used for the calculation](../assets/heat-exchangers/furnace-temperature-profile.svg)
+
+**Profile convention:** Like the co-current and counter-current plots, the horizontal axis follows the hot-gas direction. Here it starts after the flame zone and ends at the furnace exit. The illustrative flue-gas curve cools from 1600 °C to **927 °C (1200 K)** at the exit. The tube-wall curves remain above the boiling-fluid temperature of 300 °C and approach it as heat flux decreases. The dashed horizontal reference marks $T_{fg,exit}$, the hot-side input used throughout the simplified lumped calculation; the falling gas curve illustrates spatial behavior rather than a temperature distribution calculated by that lumped model. These curves assume boiling at nearly constant pressure, so fluid temperature stays approximately constant while steam quality increases.
+
+The simplified radiation calculation is therefore:
+
+$$\dot Q_{rad}=\varepsilon_{eff}\sigma A\left(T_{fg,exit}^4-T_{w,o}^4\right)$$
+
+Here $T_{fg,exit}$ is the furnace exit flue-gas temperature used for the hot side, $T_{w,o}$ is the outer tube-wall temperature, $A$ is the receiving area, and $\sigma=5.6704\times10^{-8}\ \mathrm{W/(m^2\,K^4)}$. **Use absolute temperatures in kelvin.** The effective exchange factor $\varepsilon_{eff}$ represents emissivity and geometry for this simplified model; detailed furnace models must also account for participating gases, soot and enclosure radiation.
+
+The gas-side convective contribution is $\dot Q_{conv}=h_gA(T_{fg,exit}-T_{w,o})$. At steady state, neglecting losses, the combined heat input equals heat conducted through the tube and absorbed by the working fluid:
+
+$$\dot Q_{rad}+\dot Q_{conv}=\frac{T_{w,o}-T_{w,i}}{R_{wall}}=h_iA_i(T_{w,i}-T_f)=\dot m_f(h_{out}-h_{in}).$$
+
+The subscripts $o$ and $i$ denote outer and inner wall surfaces; $T_f$ is the local bulk-fluid temperature and $R_{wall}$ is the total wall conduction resistance in K/W. During normal heat absorption, the outer wall is hotter than the inner wall, which is hotter than the fluid. Wall temperature is determined by the heat flux and thermal resistances. It is generally **not the average** of furnace and fluid temperatures. During boiling at nearly constant pressure, fluid temperature stays near saturation while steam quality increases.
+
+**Worked example:** With furnace exit temperature $T_{fg,exit}=1200\ \mathrm{K}$ (approximately 927 °C), $T_{w,o}=600\ \mathrm{K}$, $\varepsilon_{eff}=0.8$ and $A=10\ \mathrm{m^2}$, the radiative heat input is approximately $0.882\ \mathrm{MW}$, before adding gas convection. This is a radiation calculation with an assumed wall temperature; solve the coupled wall and fluid balances to predict that temperature.
+
+For a dynamic PsxCad model, include combustion heat release in the furnace energy balance and use $\dot Q_{rad}+\dot Q_{conv}$ as heat input to the wall state described in Section 17.6. Use the calculated furnace exit temperature as the hot-side input and recalculate radiation as that temperature and the wall temperature change; a fixed $UA$ or the flow exponent 0.6 alone cannot capture its fourth-power temperature dependence.
 
 ## 17.4 LMTD and heat duty
 
@@ -81,8 +111,9 @@ where $C_w=m_wc_{p,w}$ (J/K). The hot and cold streams also require mass/energy 
 5. Change one flow from 100% to 50% and trend inlet/outlet temperatures, $UA$, heat duty and energy-balance residual.
 6. Add a metal thermal-capacity state; compare instantaneous steady-state behavior with the transient response.
 7. Verify that heat lost by the hot stream equals heat gained by the cold stream plus any modeled storage and losses.
+8. Add a furnace variant with radiation and gas convection. Step the combustion heat release and trend furnace exit flue-gas, wall and fluid temperatures, radiative duty and steam production. Include wall storage in the transient energy balance.
 
-**Suggested signals:** `M_HOT`, `M_COLD`, `T_HOT_IN`, `T_COLD_IN`, `T_HOT_OUT`, `T_COLD_OUT`, `UA_DESIGN`, `UA_ACTUAL`, `Q_TRANSFER`, `T_WALL`.
+**Suggested signals:** `M_HOT`, `M_COLD`, `T_HOT_IN`, `T_COLD_IN`, `T_HOT_OUT`, `T_COLD_OUT`, `UA_DESIGN`, `UA_ACTUAL`, `Q_TRANSFER`, `T_WALL`, `T_FG_EXIT`.
 
 ## 17.8 Review questions
 
@@ -91,3 +122,4 @@ where $C_w=m_wc_{p,w}$ (J/K). The hot and cold streams also require mass/energy 
 3. If flow falls to 50% of design, why does heat duty not necessarily fall to 66%?
 4. When should a simple LMTD model be replaced by a segmented dynamic model?
 5. Which thermal masses explain a delayed outlet-temperature response after a flow change?
+6. Why must radiation calculations use kelvin, and why is the furnace tube-wall temperature generally not the average of the source and fluid temperatures?
