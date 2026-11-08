@@ -1,6 +1,6 @@
 # Boiler & Steam Power Plant Engineering
 
-A practical reference course for simulation engineers, from process fundamentals to dynamic simulation in PsxCad.
+A practical reference course for simulation engineers, from process fundamentals to dynamic simulation.
 
 ![Course learning progression](assets/course-roadmap.svg)
 
@@ -77,9 +77,9 @@ Each chapter includes an original SVG process illustration. Images are stored lo
 55. Basic Boiler and Steam Plant Control
 56. Operating Limits and Basic Safety Principles
 
-## Part 6 — Dynamic Simulation with PsxCad
+## Part 6 — Dynamic Simulation
 
-57. Physical Modeling Principles in PsxCad
+57. Physical Modeling Principles
 58. Modeling Fluid Flow and Pressure Networks
 59. Modeling Pumps, Valves and Vessels
 60. Modeling Heat Transfer and Heat Exchangers
@@ -96,7 +96,7 @@ Each chapter includes an original SVG process illustration. Images are stored lo
 
 ## How to use this project
 
-Each numbered chapter contains process principles, an engineering relationship, PsxCad modeling guidance, a practical exercise and review questions. Read Parts 1–2 before combining equipment into plant systems. Part 6 develops integrated simulation exercises.
+Each numbered chapter contains process principles, an engineering relationship, modeling guidance, a practical exercise and review questions. Read Parts 1–2 before combining equipment into plant systems. Part 6 develops integrated simulation exercises.
 
 These are **introductory technical training notes**, not detailed design calculations or certified safety procedures. Simplified equations must be checked for their applicable regimes, property bases and units. Use manufacturer data and verified water/steam properties for real applications.
 

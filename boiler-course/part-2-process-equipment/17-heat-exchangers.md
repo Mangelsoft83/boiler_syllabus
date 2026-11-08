@@ -1,7 +1,7 @@
 # 17. Heat Exchangers
 
 > **Audience:** Beginning simulation engineers  
-> **Scope:** Flow arrangements, heat balances, flow-dependent heat transfer and simplified PsxCad modeling.  
+> **Scope:** Flow arrangements, heat balances, flow-dependent heat transfer and simplified modeling.\
 > **Note:** Examples are illustrative; use validated design data for real equipment.
 
 ## 17.1 Purpose and main principles
@@ -56,7 +56,7 @@ The subscripts $o$ and $i$ denote outer and inner wall surfaces; $T_f$ is the lo
 
 **Worked example:** With furnace exit temperature $T_{fg,exit}=1200\ \mathrm{K}$ (approximately 927 °C), $T_{w,o}=600\ \mathrm{K}$, $\varepsilon_{eff}=0.8$ and $A=10\ \mathrm{m^2}$, the radiative heat input is approximately $0.882\ \mathrm{MW}$, before adding gas convection. This is a radiation calculation with an assumed wall temperature; solve the coupled wall and fluid balances to predict that temperature.
 
-For a dynamic PsxCad model, include combustion heat release in the furnace energy balance and use $\dot Q_{rad}+\dot Q_{conv}$ as heat input to the wall state described in Section 17.6. Use the calculated furnace exit temperature as the hot-side input and recalculate radiation as that temperature and the wall temperature change; a fixed $UA$ or the flow exponent 0.6 alone cannot capture its fourth-power temperature dependence.
+For a dynamic model, include combustion heat release in the furnace energy balance and use $\dot Q_{rad}+\dot Q_{conv}$ as heat input to the wall state described in Section 17.6. Use the calculated furnace exit temperature as the hot-side input and recalculate radiation as that temperature and the wall temperature change; a fixed $UA$ or the flow exponent 0.6 alone cannot capture its fourth-power temperature dependence.
 
 ## 17.4 LMTD and heat duty
 
@@ -102,20 +102,7 @@ $$C_w\frac{dT_w}{dt}=\dot Q_{hot\rightarrow wall}-\dot Q_{wall\rightarrow cold}-
 
 where $C_w=m_wc_{p,w}$ (J/K). The hot and cold streams also require mass/energy balances when their holdup is significant. For counter-current behavior, discretize the exchanger into several cells and connect the cold-side cells in reverse order.
 
-## 17.7 PsxCad simulation exercise
-
-1. Create two fluid streams with specified inlet temperatures, mass flows and heat capacities.
-2. Implement co-current and counter-current variants with the same nominal heat-transfer area/conductance.
-3. At design flow, compare calculated outlet temperatures and heat duties.
-4. Apply $UA=UA_{design}(\dot m/\dot m_{design})^{0.6}$ for a one-side-dominant demonstration; then try the two-side resistance model.
-5. Change one flow from 100% to 50% and trend inlet/outlet temperatures, $UA$, heat duty and energy-balance residual.
-6. Add a metal thermal-capacity state; compare instantaneous steady-state behavior with the transient response.
-7. Verify that heat lost by the hot stream equals heat gained by the cold stream plus any modeled storage and losses.
-8. Add a furnace variant with radiation and gas convection. Step the combustion heat release and trend furnace exit flue-gas, wall and fluid temperatures, radiative duty and steam production. Include wall storage in the transient energy balance.
-
-**Suggested signals:** `M_HOT`, `M_COLD`, `T_HOT_IN`, `T_COLD_IN`, `T_HOT_OUT`, `T_COLD_OUT`, `UA_DESIGN`, `UA_ACTUAL`, `Q_TRANSFER`, `T_WALL`, `T_FG_EXIT`.
-
-## 17.8 Review questions
+## 17.7 Review questions
 
 1. Why does counter-current flow usually transfer more heat than co-current flow for the same UA and inlet conditions?
 2. Why can the cold outlet exceed the hot outlet temperature in counter-current operation?

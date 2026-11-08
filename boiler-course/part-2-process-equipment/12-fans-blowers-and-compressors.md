@@ -1,7 +1,7 @@
 # 12. 12. Fans, Blowers and Compressors
 
 > **Audience:** Beginning simulation engineers  
-> **Scope:** Process understanding, practical engineering calculations and introductory PsxCad simulation.  
+> **Scope:** Process understanding, practical engineering calculations and introductory simulation.\
 > **Status:** Foundation lesson; values and simplified models must be checked against plant-specific data before use.
 
 ## What you will learn
@@ -15,7 +15,7 @@
 
 ![Conceptual process diagram for 12. Fans, Blowers and Compressors](../../assets/chapter-12.svg)
 
-*Figure: Physical inputs, equipment behavior and outputs. The diagram highlights the main input, physical transformation, and output quantities relevant to a first PsxCad model.*
+*Figure: Physical inputs, equipment behavior and outputs. The diagram highlights the main input, physical transformation, and output quantities relevant to a first model.*
 
 
 ## Engineering characteristic: Fan pressure and duct resistance
@@ -35,8 +35,6 @@ Illustrative curves show that the fan operating point occurs where fan pressure 
 
 **Interpretation:** The fan curve intersects the duct resistance curve at the operating point; gas density affects dimensional pressure and power.
 
-**PsxCad exercise:** Vary one physical input or model parameter, record the response, and compare the resulting curve with the expected trend. Document the units, boundary conditions, and validity range.
-
 ## Process principles
 
 Fans move large volumes of low-pressure gas; compressors generate higher pressure ratios. Density varies with temperature and pressure. Fan operating points depend on duct resistance, dampers and speed.
@@ -47,23 +45,15 @@ Fans move large volumes of low-pressure gas; compressors generate higher pressur
 
 **Engineering note:** Check the units and validity range of this relationship. It is an introductory model or calculation, not a substitute for equipment manufacturer data, validated steam properties or detailed design standards.
 
-## Dynamic behavior and PsxCad model
+## Dynamic behavior and modeling
 
 Use gas density and a pressure-rise characteristic rather than fixed flow.
-
-A practical PsxCad exercise should define:
-
-1. **Inputs:** relevant flow, pressure, temperature, enthalpy, heat, command or operating conditions.
-2. **Parameters:** physical geometry, efficiency, heat capacity, coefficients, limits and characteristic curves as applicable.
-3. **States:** stored mass, stored energy, wall temperature, speed, actuator position or controller integral where applicable.
-4. **Outputs:** observable process quantities, calculated duty or power, and diagnostic conservation residuals.
-5. **Tests:** nominal steady state, one controlled input change, and checks for physical bounds and conservation.
 
 ## Worked or practical exercise
 
 Simulate an induced-draft fan speed step and furnace-pressure response.
 
-**Suggested deliverable:** a calculation sheet or short explanation, a PsxCad model diagram, and a trend plot of the relevant transient response. Record all assumptions.
+**Suggested deliverable:** a calculation sheet or short explanation, a model diagram, and a trend plot of the relevant transient response. Record all assumptions.
 
 ## Review questions
 

@@ -1,7 +1,7 @@
 # 6. 6. Properties of Water and Steam
 
 > **Audience:** Beginning simulation engineers  
-> **Scope:** Process understanding, practical engineering calculations and introductory PsxCad simulation.  
+> **Scope:** Process understanding, practical engineering calculations and introductory simulation.\
 > **Status:** Foundation lesson; values and simplified models must be checked against plant-specific data before use.
 
 ## What you will learn
@@ -15,7 +15,7 @@
 
 ![Conceptual process diagram for 6. Properties of Water and Steam](../../assets/chapter-06.svg)
 
-*Figure: Water and steam energy balance. The diagram highlights the main input, physical transformation, and output quantities relevant to a first PsxCad model.*
+*Figure: Water and steam energy balance. The diagram highlights the main input, physical transformation, and output quantities relevant to a first model.*
 
 
 ## Engineering characteristic: Water saturation temperature versus pressure
@@ -35,8 +35,6 @@ Approximate rounded saturation points for teaching; consult IAPWS-IF97 for prope
 
 **Interpretation:** At constant pressure, temperature stays approximately constant during pure-water evaporation. Actual saturation temperature varies with pressure.
 
-**PsxCad exercise:** Vary one physical input or model parameter, record the response, and compare the resulting curve with the expected trend. Document the units, boundary conditions, and validity range.
-
 ## Process principles
 
 Water can be subcooled, saturated, two-phase or superheated. Saturation temperature depends on absolute pressure. Steam quality x denotes vapor mass fraction, not relative humidity. Consult consistent steam tables or IAPWS-IF97 properties.
@@ -47,23 +45,15 @@ h_mix = (1−x)h_f + x h_g; x = (h−h_f)/(h_g−h_f) within the saturation dome
 
 **Engineering note:** Check the units and validity range of this relationship. It is an introductory model or calculation, not a substitute for equipment manufacturer data, validated steam properties or detailed design standards.
 
-## Dynamic behavior and PsxCad model
+## Dynamic behavior and modeling
 
 Track pressure and specific enthalpy as independent thermodynamic states where practical.
-
-A practical PsxCad exercise should define:
-
-1. **Inputs:** relevant flow, pressure, temperature, enthalpy, heat, command or operating conditions.
-2. **Parameters:** physical geometry, efficiency, heat capacity, coefficients, limits and characteristic curves as applicable.
-3. **States:** stored mass, stored energy, wall temperature, speed, actuator position or controller integral where applicable.
-4. **Outputs:** observable process quantities, calculated duty or power, and diagnostic conservation residuals.
-5. **Tests:** nominal steady state, one controlled input change, and checks for physical bounds and conservation.
 
 ## Worked or practical exercise
 
 Using steam-table values, determine quality from a specified pressure and mixture enthalpy.
 
-**Suggested deliverable:** a calculation sheet or short explanation, a PsxCad model diagram, and a trend plot of the relevant transient response. Record all assumptions.
+**Suggested deliverable:** a calculation sheet or short explanation, a model diagram, and a trend plot of the relevant transient response. Record all assumptions.
 
 ## Review questions
 

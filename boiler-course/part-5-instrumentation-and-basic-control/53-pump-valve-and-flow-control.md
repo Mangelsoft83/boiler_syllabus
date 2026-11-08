@@ -1,7 +1,7 @@
 # 53. 53. Pump, Valve and Flow Control
 
 > **Audience:** Beginning simulation engineers  
-> **Scope:** Process understanding, practical engineering calculations and introductory PsxCad simulation.  
+> **Scope:** Process understanding, practical engineering calculations and introductory simulation.\
 > **Status:** Foundation lesson; values and simplified models must be checked against plant-specific data before use.
 
 ## What you will learn
@@ -15,7 +15,7 @@
 
 ![Conceptual process diagram for 53. Pump, Valve and Flow Control](../../assets/chapter-53.svg)
 
-*Figure: Pump head and operating point. The diagram highlights the main input, physical transformation, and output quantities relevant to a first PsxCad model.*
+*Figure: Pump head and operating point. The diagram highlights the main input, physical transformation, and output quantities relevant to a first model.*
 
 
 ## Additional engineering illustration — Pump and system operating point
@@ -25,8 +25,6 @@
 *Illustrative teaching graph, not manufacturer data or a validated plant characteristic.*
 
 **Interpretation:** The intersection of pump and system curves defines the steady operating point. For NPSH and efficiency see the dedicated pump graphs.
-
-**PsxCad exercise:** Vary one physical input or model parameter, record the response, and compare the resulting curve with the expected trend. Document the units, boundary conditions, and validity range.
 
 ## Process principles
 
@@ -38,23 +36,15 @@ Flow through a simple restriction: Q ∝ opening × √Δp as a rough approximat
 
 **Engineering note:** Check the units and validity range of this relationship. It is an introductory model or calculation, not a substitute for equipment manufacturer data, validated steam properties or detailed design standards.
 
-## Dynamic behavior and PsxCad model
+## Dynamic behavior and modeling
 
 Connect a PI controller to a valve actuator and hydraulic network.
-
-A practical PsxCad exercise should define:
-
-1. **Inputs:** relevant flow, pressure, temperature, enthalpy, heat, command or operating conditions.
-2. **Parameters:** physical geometry, efficiency, heat capacity, coefficients, limits and characteristic curves as applicable.
-3. **States:** stored mass, stored energy, wall temperature, speed, actuator position or controller integral where applicable.
-4. **Outputs:** observable process quantities, calculated duty or power, and diagnostic conservation residuals.
-5. **Tests:** nominal steady state, one controlled input change, and checks for physical bounds and conservation.
 
 ## Worked or practical exercise
 
 Test whether flow recovers after a supply-pressure disturbance.
 
-**Suggested deliverable:** a calculation sheet or short explanation, a PsxCad model diagram, and a trend plot of the relevant transient response. Record all assumptions.
+**Suggested deliverable:** a calculation sheet or short explanation, a model diagram, and a trend plot of the relevant transient response. Record all assumptions.
 
 ## Review questions
 
